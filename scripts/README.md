@@ -21,4 +21,4 @@ Cada evento puede ser inspeccionado individualmente, y los resultados se present
 
 ---
 
-🔗 [Ver código fuente de la interfaz (interfaz.py)](scripts/interfaz.py)
+🔗 [Ver código fuente de la interfaz (interfaz.py)](interfaz.py)
