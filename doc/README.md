@@ -1,3 +1,5 @@
+## Documentación
+
 📄 **Este repositorio contiene el documento de tesis y sus archivos fuente en formato LaTeX.**  
 Aquí encontrarás enlaces directos para visualizar el documento final y descargar todo el código fuente necesario para compilarlo.
 
