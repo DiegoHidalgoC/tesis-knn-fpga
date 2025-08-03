@@ -1,0 +1,424 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x125A2FC77A8E33CC",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../tesis_terminada.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1"
+    },
+    "design_tree": {
+      "uart_rx": "",
+      "sample_packer": "",
+      "counter": "",
+      "brom_PRL": "",
+      "brom_PRH": "",
+      "brom_LABEL": "",
+      "top_k_sort": "",
+      "selection_label": "",
+      "uart_packer": "",
+      "uart_tx": "",
+      "timer": "",
+      "global_reset": "",
+      "manhattan_distance": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "rx": {
+        "direction": "I"
+      },
+      "tx": {
+        "direction": "O"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      }
+    },
+    "components": {
+      "uart_rx": {
+        "vlnv": "xilinx.com:user:uart_rx:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_uart_rx_0_0",
+        "xci_path": "ip\\design_1_uart_rx_0_0\\design_1_uart_rx_0_0.xci",
+        "inst_hier_path": "uart_rx",
+        "has_run_ip_tcl": "true"
+      },
+      "sample_packer": {
+        "vlnv": "xilinx.com:user:sample_packer:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_sample_packer_0_0",
+        "xci_path": "ip\\design_1_sample_packer_0_0\\design_1_sample_packer_0_0.xci",
+        "inst_hier_path": "sample_packer",
+        "has_run_ip_tcl": "true"
+      },
+      "counter": {
+        "vlnv": "xilinx.com:user:counter:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_counter_0_0",
+        "xci_path": "ip\\design_1_counter_0_0\\design_1_counter_0_0.xci",
+        "inst_hier_path": "counter",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "10"
+          },
+          "MAX_ADDR": {
+            "value": "742"
+          }
+        }
+      },
+      "brom_PRL": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "11",
+        "xci_name": "design_1_blk_mem_gen_0_0",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_0\\design_1_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "brom_PRL",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../trabajo de titulo_termino/python/prl.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Write_Depth_A": {
+            "value": "745"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "brom_PRH": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "11",
+        "xci_name": "design_1_blk_mem_gen_0_1",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_1\\design_1_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "brom_PRH",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../trabajo de titulo_termino/python/prh.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Write_Depth_A": {
+            "value": "745"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "brom_LABEL": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "11",
+        "xci_name": "design_1_blk_mem_gen_0_2",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_2\\design_1_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "brom_LABEL",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../trabajo de titulo_termino/python/labels.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Write_Depth_A": {
+            "value": "745"
+          },
+          "Write_Width_A": {
+            "value": "1"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "top_k_sort": {
+        "vlnv": "xilinx.com:user:top_k_sort:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_top_k_sort_0_0",
+        "xci_path": "ip\\design_1_top_k_sort_0_0\\design_1_top_k_sort_0_0.xci",
+        "inst_hier_path": "top_k_sort",
+        "has_run_ip_tcl": "true"
+      },
+      "selection_label": {
+        "vlnv": "xilinx.com:user:selection_label:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_selection_label_0_0",
+        "xci_path": "ip\\design_1_selection_label_0_0\\design_1_selection_label_0_0.xci",
+        "inst_hier_path": "selection_label",
+        "has_run_ip_tcl": "true"
+      },
+      "uart_packer": {
+        "vlnv": "xilinx.com:user:uart_packer:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_uart_packer_0_0",
+        "xci_path": "ip\\design_1_uart_packer_0_0\\design_1_uart_packer_0_0.xci",
+        "inst_hier_path": "uart_packer",
+        "has_run_ip_tcl": "true"
+      },
+      "uart_tx": {
+        "vlnv": "xilinx.com:user:uart_tx:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_uart_tx_0_0",
+        "xci_path": "ip\\design_1_uart_tx_0_0\\design_1_uart_tx_0_0.xci",
+        "inst_hier_path": "uart_tx",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "BAUD": {
+            "value": "460800"
+          }
+        }
+      },
+      "timer": {
+        "vlnv": "xilinx.com:user:timer:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_timer_0_0",
+        "xci_path": "ip\\design_1_timer_0_0\\design_1_timer_0_0.xci",
+        "inst_hier_path": "timer",
+        "has_run_ip_tcl": "true"
+      },
+      "global_reset": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "17",
+        "xci_name": "design_1_proc_sys_reset_0_0",
+        "xci_path": "ip\\design_1_proc_sys_reset_0_0\\design_1_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "global_reset",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "manhattan_distance": {
+        "vlnv": "xilinx.com:user:manhattan_distance:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_manhattan_distance_0_1",
+        "xci_path": "ip\\design_1_manhattan_distance_0_1\\design_1_manhattan_distance_0_1.xci",
+        "inst_hier_path": "manhattan_distance",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "global_reset/peripheral_reset",
+          "uart_packer/rst",
+          "uart_tx/rst",
+          "sample_packer/rst",
+          "uart_rx/rst",
+          "counter/rst",
+          "timer/rst"
+        ]
+      },
+      "brom_LABEL_douta": {
+        "ports": [
+          "brom_LABEL/douta",
+          "manhattan_distance/label_test"
+        ]
+      },
+      "brom_PRH_douta": {
+        "ports": [
+          "brom_PRH/douta",
+          "manhattan_distance/prh_test"
+        ]
+      },
+      "brom_PRL_douta": {
+        "ports": [
+          "brom_PRL/douta",
+          "manhattan_distance/prl_test"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "uart_rx/clk",
+          "sample_packer/clk",
+          "counter/clk",
+          "brom_PRL/clka",
+          "brom_PRH/clka",
+          "brom_LABEL/clka",
+          "top_k_sort/clk",
+          "selection_label/clk",
+          "uart_packer/clk",
+          "uart_tx/clk",
+          "timer/clk",
+          "global_reset/slowest_sync_clk",
+          "manhattan_distance/clk"
+        ]
+      },
+      "counter_addr": {
+        "ports": [
+          "counter/addr",
+          "brom_PRL/addra",
+          "brom_PRH/addra",
+          "brom_LABEL/addra"
+        ]
+      },
+      "counter_done": {
+        "ports": [
+          "counter/done",
+          "selection_label/done"
+        ]
+      },
+      "counter_ena": {
+        "ports": [
+          "counter/ena",
+          "manhattan_distance/ena"
+        ]
+      },
+      "manhattan_distance_distance": {
+        "ports": [
+          "manhattan_distance/distance",
+          "top_k_sort/distance"
+        ]
+      },
+      "manhattan_distance_label_signal": {
+        "ports": [
+          "manhattan_distance/label_signal",
+          "top_k_sort/label_signal"
+        ]
+      },
+      "manhattan_distance_valid_data": {
+        "ports": [
+          "manhattan_distance/valid_data",
+          "top_k_sort/valid_data"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "global_reset/ext_reset_in"
+        ]
+      },
+      "rx_0_1": {
+        "ports": [
+          "rx",
+          "uart_rx/rx"
+        ]
+      },
+      "sample_packer_prh_sample": {
+        "ports": [
+          "sample_packer/prh_sample",
+          "manhattan_distance/prh_sample"
+        ]
+      },
+      "sample_packer_prl_sample": {
+        "ports": [
+          "sample_packer/prl_sample",
+          "manhattan_distance/prl_sample"
+        ]
+      },
+      "sample_packer_sample_valid": {
+        "ports": [
+          "sample_packer/sample_valid",
+          "counter/sample_valid",
+          "timer/start"
+        ]
+      },
+      "selection_label_selection_label": {
+        "ports": [
+          "selection_label/selection_label",
+          "uart_packer/selection_label"
+        ]
+      },
+      "selection_label_valid_label": {
+        "ports": [
+          "selection_label/valid_label",
+          "uart_packer/valid_label",
+          "timer/stop"
+        ]
+      },
+      "timer_elapsed_time": {
+        "ports": [
+          "timer/elapsed_time",
+          "uart_packer/elapsed_time"
+        ]
+      },
+      "top_k_sort_sorted_label": {
+        "ports": [
+          "top_k_sort/sorted_label",
+          "selection_label/sorted_label"
+        ]
+      },
+      "uart_packer_tx_data": {
+        "ports": [
+          "uart_packer/tx_data",
+          "uart_tx/tx_data"
+        ]
+      },
+      "uart_packer_tx_valid": {
+        "ports": [
+          "uart_packer/tx_valid",
+          "uart_tx/tx_valid"
+        ]
+      },
+      "uart_rx_data_in": {
+        "ports": [
+          "uart_rx/data_in",
+          "sample_packer/data_in"
+        ]
+      },
+      "uart_rx_new_data": {
+        "ports": [
+          "uart_rx/new_data",
+          "sample_packer/new_data"
+        ]
+      },
+      "uart_tx_0_tx_ready": {
+        "ports": [
+          "uart_tx/tx_ready",
+          "uart_packer/tx_ready"
+        ]
+      },
+      "uart_tx_0_tx_serial": {
+        "ports": [
+          "uart_tx/tx_serial",
+          "tx"
+        ]
+      }
+    }
+  }
+}

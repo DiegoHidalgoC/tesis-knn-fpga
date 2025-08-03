@@ -1,0 +1,101 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Jul 29 00:27:18 2025
+| Host         : tech-bench running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    23 |
+|    Minimum number of control sets                        |    23 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    23 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              31 |           11 |
+| No           | No                    | Yes                    |              29 |           12 |
+| No           | Yes                   | No                     |              33 |           17 |
+| Yes          | No                    | No                     |              50 |           19 |
+| Yes          | No                    | Yes                    |              56 |           12 |
+| Yes          | Yes                   | No                     |             142 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                      Enable Signal                      |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                         | design_1_i/global_reset/U0/EXT_LPF/lpf_int       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | design_1_i/global_reset/U0/SEQ/seq_cnt_en               | design_1_i/global_reset/U0/SEQ/SEQ_COUNTER/clear |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | design_1_i/uart_tx/inst/clk_count_0                     | design_1_i/global_reset/U0/peripheral_reset[0]   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | design_1_i/uart_tx/inst/tx_valid_reg0                   | design_1_i/global_reset/U0/peripheral_reset[0]   |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | design_1_i/uart_tx/inst/shift_reg                       | design_1_i/global_reset/U0/peripheral_reset[0]   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | design_1_i/uart_packer/inst/tx_data[7]_i_1_n_0          | design_1_i/global_reset/U0/peripheral_reset[0]   |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | design_1_i/uart_rx/inst/uart_inst/E[0]                  | design_1_i/global_reset/U0/peripheral_reset[0]   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | design_1_i/uart_rx/inst/uart_inst/data_valid_i_1_n_0    | design_1_i/global_reset/U0/peripheral_reset[0]   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | design_1_i/counter/inst/sel                             | design_1_i/counter/inst/cnt[9]_i_1_n_0           |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | design_1_i/timer/inst/contador                          | design_1_i/timer/inst/contador[0]_i_1_n_0        |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG | design_1_i/timer/inst/elapsed_time[14]_i_1_n_0          | design_1_i/global_reset/U0/peripheral_reset[0]   |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG | design_1_i/sample_packer/inst/prh_sample[15]_i_1_n_0    |                                                  |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | design_1_i/sample_packer/inst/prl_sample[15]_i_1_n_0    |                                                  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | design_1_i/uart_packer/inst/buffer[15]_i_1_n_0          | design_1_i/global_reset/U0/peripheral_reset[0]   |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | design_1_i/uart_rx/inst/uart_inst/byte_valid_d_reg[0]   | design_1_i/global_reset/U0/peripheral_reset[0]   |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG |                                                         | design_1_i/top_k_sort/inst/dists[0][16]_i_1_n_0  |               10 |             18 |         1.80 |
+|  clk_IBUF_BUFG | design_1_i/counter/inst/ena                             |                                                  |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG | design_1_i/top_k_sort/inst/dists[4][16]_i_1_n_0         | design_1_i/top_k_sort/inst/dists[0][16]_i_1_n_0  |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG | design_1_i/top_k_sort/inst/dists[2][16]_i_1_n_0         | design_1_i/top_k_sort/inst/dists[0][16]_i_1_n_0  |                8 |             18 |         2.25 |
+|  clk_IBUF_BUFG | design_1_i/top_k_sort/inst/dists[3][16]_i_1_n_0         | design_1_i/top_k_sort/inst/dists[0][16]_i_1_n_0  |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG | design_1_i/top_k_sort/inst/_inferred__0/i__carry__1_n_3 | design_1_i/top_k_sort/inst/dists[0][16]_i_1_n_0  |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG |                                                         |                                                  |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG |                                                         | design_1_i/global_reset/U0/peripheral_reset[0]   |               17 |             40 |         2.35 |
++----------------+---------------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+
+

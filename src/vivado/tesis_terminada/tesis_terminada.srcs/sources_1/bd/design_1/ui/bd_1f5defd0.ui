@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.18514",
+   "Default View_TopLeft":"-2652,-335",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 2 -x 300 -y -40 -defaultsOSRD -top
+preplace port port-id_rx -pg 1 -lvl 2 -x 200 -y -40 -defaultsOSRD -top
+preplace port port-id_tx -pg 1 -lvl 2 -x 290 -y 2186 -defaultsOSRD -bot
+preplace port port-id_reset -pg 1 -lvl 2 -x 410 -y -40 -defaultsOSRD -top
+preplace inst uart_rx -pg 1 -lvl 2 -x 300 -y 340 -defaultsOSRD
+preplace inst sample_packer -pg 1 -lvl 2 -x 300 -y 530 -defaultsOSRD
+preplace inst counter -pg 1 -lvl 2 -x 300 -y 680 -defaultsOSRD
+preplace inst brom_PRL -pg 1 -lvl 1 -x -120 -y 900 -defaultsOSRD
+preplace inst brom_PRH -pg 1 -lvl 2 -x 300 -y 900 -defaultsOSRD
+preplace inst brom_LABEL -pg 1 -lvl 3 -x 676 -y 890 -defaultsOSRD
+preplace inst top_k_sort -pg 1 -lvl 2 -x 300 -y 1330 -defaultsOSRD
+preplace inst selection_label -pg 1 -lvl 2 -x 300 -y 1500 -defaultsOSRD
+preplace inst uart_packer -pg 1 -lvl 2 -x 300 -y 1880 -defaultsOSRD
+preplace inst uart_tx -pg 1 -lvl 2 -x 300 -y 2090 -defaultsOSRD
+preplace inst timer -pg 1 -lvl 2 -x 300 -y 1660 -defaultsOSRD
+preplace inst global_reset -pg 1 -lvl 2 -x 300 -y 130 -defaultsOSRD
+preplace inst manhattan_distance -pg 1 -lvl 2 -x 300 -y 1120 -defaultsOSRD
+preplace netloc Net 1 1 2 30 30 480
+preplace netloc brom_LABEL_douta 1 1 2 100 990 510
+preplace netloc clk_0_1 1 0 3 -240 1000 10 770 510
+preplace netloc counter_addr 1 0 3 -220 990 20 800 500
+preplace netloc counter_done 1 1 2 80 790 480
+preplace netloc counter_ena 1 1 2 70 780 490
+preplace netloc manhattan_distance_distance 1 1 2 90 810 470
+preplace netloc manhattan_distance_label_signal 1 1 2 110 1000 480
+preplace netloc manhattan_distance_valid_data 1 1 2 130 1240 480
+preplace netloc reset_1 1 1 1 130 -20n
+preplace netloc rx_0_1 1 1 1 40 -30n
+preplace netloc sample_packer_prh_sample 1 1 2 50 430 490
+preplace netloc sample_packer_prl_sample 1 1 2 60 440 470
+preplace netloc sample_packer_sample_valid 1 1 2 40 760 470
+preplace netloc selection_label_selection_label 1 1 2 110 1760 490
+preplace netloc selection_label_valid_label 1 1 2 120 1750 480
+preplace netloc timer_elapsed_time 1 1 2 130 1770 470
+preplace netloc top_k_sort_sorted_label 1 1 2 130 1420 470
+preplace netloc uart_packer_tx_data 1 1 2 110 1990 490
+preplace netloc uart_packer_tx_valid 1 1 2 120 2000 480
+preplace netloc uart_rx_data_in 1 1 2 40 420 470
+preplace netloc uart_rx_new_data 1 1 2 130 260 480
+preplace netloc uart_tx_0_tx_ready 1 1 2 100 2190 490
+preplace netloc uart_tx_0_tx_serial 1 2 1 470 2100n
+preplace netloc brom_PRL_douta 1 0 2 -230 1140 N
+preplace netloc brom_PRH_douta 1 1 1 130 930n
+levelinfo -pg 1 -260 -120 300 676 780
+pagesize -pg 1 -db -bbox -sgen -300 -120 3030 2280
+"
+}
+0

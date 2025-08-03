@@ -1,0 +1,53 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Jul 29 00:27:51 2025
+| Host         : tech-bench running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 3
++-----------+----------+------------------------------------------+--------+
+| Rule      | Severity | Description                              | Checks |
++-----------+----------+------------------------------------------+--------+
+| TIMING-18 | Warning  | Missing input or output delay            | 2      |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 1      |
++-----------+----------+------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on tx relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 5.000 ns has been defined on port 'rx' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks sys_clk_pin] 5.000 [get_ports rx]
+C:/Users/diego/OneDrive/Escritorio/tesis_de_mierda/tesis_de_mierda.srcs/constrs_1/new/texsis.xdc (Line: 59)
+Related violations: <none>
+
+

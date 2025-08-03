@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/diego/OneDrive/Escritorio/PRUEBA_ILA/PRUEBA_ILA.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="932"></ZoomEndTime>
+      <Cursor1Time time="529"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="group122" type="group">
+      <obj_property name="label">top_k_sort</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/manhattan_distance_valid_data" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/manhattan_distance_valid_data</obj_property>
+         <obj_property name="ObjectShortName">manhattan_distance_valid_data</obj_property>
+         <obj_property name="label">valid_data</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/manhattan_distance_distance" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/manhattan_distance_distance[16:0]</obj_property>
+         <obj_property name="ObjectShortName">manhattan_distance_distance[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">distance[16:0]</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/manhattan_distance_label_signal" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/manhattan_distance_label_signal</obj_property>
+         <obj_property name="ObjectShortName">manhattan_distance_label_signal</obj_property>
+         <obj_property name="label">label_signal</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/top_k_sort_sorted_distance" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/top_k_sort_sorted_distance[84:0]</obj_property>
+         <obj_property name="ObjectShortName">top_k_sort_sorted_distance[84:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="label">sorted_distance[84:0]</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/top_k_sort_sorted_label" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/top_k_sort_sorted_label[0:4]</obj_property>
+         <obj_property name="ObjectShortName">top_k_sort_sorted_label[0:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="label">sorted_label[0:4]</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group123" type="group">
+      <obj_property name="label">selection_label</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/counter_done" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/counter_done</obj_property>
+         <obj_property name="ObjectShortName">counter_done</obj_property>
+         <obj_property name="label">done</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/selection_label_selection_label" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/selection_label_selection_label</obj_property>
+         <obj_property name="ObjectShortName">selection_label_selection_label</obj_property>
+         <obj_property name="label">selection_label</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/selection_label_valid_label" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/selection_label_valid_label</obj_property>
+         <obj_property name="ObjectShortName">selection_label_valid_label</obj_property>
+         <obj_property name="label">valid_label</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group127" type="group">
+      <obj_property name="label">uart_packer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/uart_packer_done" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/uart_packer_done</obj_property>
+         <obj_property name="ObjectShortName">uart_packer_done</obj_property>
+         <obj_property name="label">done</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/uart_packer_tx_data" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/uart_packer_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_packer_tx_data[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="label">tx_data[7:0]</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/uart_packer_tx_valid" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/uart_packer_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">uart_packer_tx_valid</obj_property>
+         <obj_property name="label">tx_valid</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group131" type="group">
+      <obj_property name="label">uart_tx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/uart_tx_0_tx_ready" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/uart_tx_0_tx_ready</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_0_tx_ready</obj_property>
+         <obj_property name="label">tx_ready</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/tx" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/tx</obj_property>
+         <obj_property name="ObjectShortName">tx</obj_property>
+         <obj_property name="label">tx_serial</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group134" type="group">
+      <obj_property name="label">timer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/timer_elapsed_time" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/timer_elapsed_time[14:0]</obj_property>
+         <obj_property name="ObjectShortName">timer_elapsed_time[14:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">elapsed_time[14:0]</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/timer_done" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/timer_done</obj_property>
+         <obj_property name="ObjectShortName">timer_done</obj_property>
+         <obj_property name="label">done</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
