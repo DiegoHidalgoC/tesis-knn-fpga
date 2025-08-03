@@ -1,4 +1,4 @@
-Este repositorio contiene la tesis de grado y todos los archivos asociados al diseño e implementación de un clasificador binario basado en el algoritmo k-Nearest Neighbors (k-NN) en FPGA.
+
 
 La siguiente imagen muestra la **arquitectura estructural del sistema**, desarrollada mediante bloques funcionales personalizados en SystemVerilog e integrados con IP Integrator en Vivado Suite 2025:
 
