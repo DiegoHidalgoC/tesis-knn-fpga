@@ -14,8 +14,8 @@ Las señales se almacenan en archivos de texto organizados por columnas, donde c
 📁 **Contenido**:
 
 - [DP_corona](base_de_datos/ferrita_DP_corona) → Eventos correspondientes a descargas tipo corona  
-- `descarga_interna/` → Eventos correspondientes a descargas parciales internas  
-- `ruido/` → Señales de fondo utilizadas como clase negativa (ruido)
+- [DP_interna](base_de_datos/ferrita_DP_interna) → Eventos correspondientes a descargas parciales internas  
+- [ruido_corona](base_de_datos/ferrita_ruido_corona) y [ruido_interna(base_de_datos/ferrita_ruido_interna)→ Señales de fondo utilizadas como clase negativa (ruido)
 
 ---
 
