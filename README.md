@@ -3,8 +3,8 @@
 Este repositorio contiene la tesis de grado y todos los archivos asociados al desarrollo de un clasificador binario k-NN implementado en FPGA. Incluye:
 
 - Documento PDF y fuente LaTeX ([doc/](doc/))
-- Códigos en SystemVerilog (`src/`)
-- Scripts de validación y GUI en Python (`scripts/`)
-- Datos de entrenamiento y prueba (`data/`)
+- Códigos en SystemVerilog ([scr/](src/))
+- Scripts de validación y GUI en Python ([scr/](scripts/))
+- Datos de entrenamiento y prueba ([data/](data/))
 
 Autor: Diego Hernán Hidalgo Contreras
