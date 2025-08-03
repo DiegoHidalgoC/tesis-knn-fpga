@@ -1,7 +1,7 @@
 ## Interfaz de Validación en Tiempo Real
 
 <p align="center">
-  <img src="scripts/interfaz_gui.png" alt="Interfaz gráfica GUI - Clasificador FPGA" width="800"/>
+  <img src="interfaz_gui.png" alt="Interfaz gráfica GUI - Clasificador FPGA" width="800"/>
 </p>
 
 La figura anterior muestra la interfaz gráfica desarrollada en Python mediante `tkinter` y `ttkbootstrap`, diseñada para facilitar la validación en tiempo real del clasificador binario implementado en FPGA.
