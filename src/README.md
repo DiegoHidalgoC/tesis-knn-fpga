@@ -1,4 +1,4 @@
-
+# Arquitectura del sistema
 
 🧩 La siguiente imagen muestra la **arquitectura estructural del sistema**, desarrollada mediante bloques funcionales personalizados en SystemVerilog e integrados con IP Integrator en **Vivado Design Suite 2025**:
 
