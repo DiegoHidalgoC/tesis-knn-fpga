@@ -1,4 +1,5 @@
-Este repositorio contiene el documento de tesis y sus archivos fuente en formato LaTeX. A continuación, se presentan enlaces directos para visualizar el archivo PDF final y descargar el código fuente del documento.
+📄 **Este repositorio contiene el documento de tesis y sus archivos fuente en formato LaTeX.**  
+Aquí encontrarás enlaces directos para visualizar el documento final y descargar todo el código fuente necesario para compilarlo.
 
--[Ver tesis en PDF](tesis_knn_fpga.pdf)  
--[Descargar tesis en latex](tesis_knn_fpga_latex.zip)
+- 📘 [Ver tesis en PDF](tesis_knn_fpga.pdf)  
+- 🧾 [Descargar tesis en LaTeX](tesis_knn_fpga_latex.zip)
