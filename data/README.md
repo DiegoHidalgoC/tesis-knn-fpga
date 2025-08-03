@@ -13,7 +13,7 @@ Las señales se almacenan en archivos de texto organizados por columnas, donde c
 
 📁 **Contenido**:
 
-- `descarga_corona/` → Eventos correspondientes a descargas tipo corona  
+- [DP_corona](base de datos/ferrita_DP_corona) → Eventos correspondientes a descargas tipo corona  
 - `descarga_interna/` → Eventos correspondientes a descargas parciales internas  
 - `ruido/` → Señales de fondo utilizadas como clase negativa (ruido)
 
