@@ -1,5 +1,5 @@
 
-#### 📊 Datos de Entrenamiento y Prueba
+# 📊 Datos de Entrenamiento y Prueba
 
 Este directorio contiene los archivos utilizados para entrenar y validar el clasificador binario k-NN implementado en FPGA.
 
