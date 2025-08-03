@@ -10,7 +10,7 @@ Esta herramienta permite cargar archivos de eventos, configurar bandas espectral
 
 Las funcionalidades principales incluyen:
 
-- 📁 Carga de eventos para **descargas parciales** y **ruido**.
+- 📁 Carga de eventos para **descargas parciales** y **ruido**.  
 - ⚙️ Configuración personalizada de bandas espectrales (PRL, PRH, Total).
 - 📊 Visualización espectral relativa y marcado de eventos seleccionados.
 - 📤 Envío de eventos a FPGA vía UART para su clasificación en hardware.
