@@ -1,7 +1,6 @@
 # Tesis: Clasificación Binaria con k-NN en FPGA
 
-Este repositorio contiene la tesis de grado y todos los archivos asociados al desarrollo de un clasificador binario basado en el algoritmo k-Nearest Neighbors (k-NN), optimizado para su implementación en hardware reconfigurable.  
-El sistema fue validado sobre la plataforma **Nexys A7-100T**, equipada con una FPGA **Xilinx Artix-7 XC7A100T-1CSG324C**, permitiendo una clasificación determinista en tiempo real mediante lógica digital personalizada.
+Este repositorio contiene la tesis de grado y todos los archivos asociados al desarrollo de un clasificador binario basado en el algoritmo k-Nearest Neighbors (k-NN), optimizado para su implementación en hardware reconfigurable. El sistema fue validado sobre la plataforma **Nexys A7-100T**, equipada con una FPGA **Xilinx Artix-7 XC7A100T-1CSG324C**, permitiendo una clasificación determinista en tiempo real mediante lógica digital personalizada.
 
 Todo el flujo de diseño fue desarrollado utilizando **Vivado Design Suite 2025**, empleando descripciones HDL en **SystemVerilog**, integrando bloques mediante **IP Integrator** y validando el comportamiento mediante herramientas como **Integrated Logic Analyzer (ILA)**.
 
