@@ -4,8 +4,7 @@
   <img src="interfaz_gui.png" alt="Interfaz gráfica GUI - Clasificador FPGA" width="800"/>
 </p>
 
-La figura anterior muestra la interfaz gráfica desarrollada en Python mediante `tkinter` y `ttkbootstrap`, diseñada para facilitar la validación en tiempo real del clasificador binario implementado en FPGA.  
-Esta herramienta permite cargar archivos de eventos, configurar bandas espectrales y visualizar la distribución de datos PRL/PRH en el plano cartesiano. Cada evento puede ser clasificado tanto por software (utilizando k-NN en Python) como por hardware (vía FPGA), lo que permite comparar latencia, precisión y desempeño entre ambas plataformas.
+La figura anterior muestra la interfaz gráfica desarrollada en Python mediante `tkinter` y `ttkbootstrap`, diseñada para facilitar la validación en tiempo real del clasificador binario implementado en FPGA. Esta herramienta permite cargar archivos de eventos, configurar bandas espectrales y visualizar la distribución de datos PRL/PRH en el plano cartesiano. Cada evento puede ser clasificado tanto por software (utilizando k-NN en Python) como por hardware (vía FPGA), lo que permite comparar latencia, precisión y desempeño entre ambas plataformas.
 
 Las funcionalidades principales incluyen:
 
