@@ -4,7 +4,7 @@ Este repositorio contiene la tesis de grado y todos los archivos asociados al de
 
 - Documento PDF y fuente LaTeX ([doc/](doc/))
 - Códigos en SystemVerilog ([scr/](src/))
-- Scripts de validación y GUI en Python ([scr/](scripts/))
+- Scripts de validación y GUI en Python ([scripts/](scripts/))
 - Datos de entrenamiento y prueba ([data/](data/))
 
 Autor: Diego Hernán Hidalgo Contreras
