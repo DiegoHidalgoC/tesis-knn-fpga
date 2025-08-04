@@ -14,13 +14,16 @@
 
 </div>    
 
-Tras una evaluación comparativa de distintas técnicas de ordenamiento aplicadas al algoritmo k-NN, se concluyó que 
-**Top_k_Sort** representa la alternativa más eficiente para entornos de hardware embebido. Este enfoque, derivado del clásico `Insertion Sort`, mantiene de forma incremental los \(k\) elementos más pequeños a medida que llegan los datos, sin requerir el ordenamiento completo del arreglo.
+Se evaluaron tres alternativas para ordenar las distancias obtenidas en el algoritmo k-NN:  
+🔁 **Bubble_Sort**, que requiere reorganizar la totalidad del arreglo;  
+🔁 **Top_k_Bubble_Sort**, una variante más acotada que aplica Bubble Sort solo sobre los \(k\) primeros elementos; y  
+✅ **Top_k_Sort**, un enfoque incremental derivado de `Insertion Sort`, que conserva dinámicamente los \(k\) valores más pequeños a medida que llegan nuevos datos.
 
-Además de reducir drásticamente el uso de recursos lógicos (LUTs y registros), esta implementación facilita la operación secuencial en tiempo real y se adapta naturalmente a la arquitectura de sistemas en FPGA.
+Gracias a su bajo uso de LUTs y registros, y a su compatibilidad con arquitecturas secuenciales en tiempo real, **Top_k_Sort** fue seleccionado como la solución óptima para implementaciones eficientes en FPGA.
 
 ### 🔗 Acceso directo a los bloques RTL
 
-- 🔁 Bubble Sort [(`bubble_sort.sv`)](bubble_sort/bubble_sort.srcs/sources_1/new/bubble_sort.sv)  
-- 🔁 Top-k Bubble Sort [(`top_k_sort_bubble.sv`)](top_k_sort_bubble/top_k_sort_bubble.srcs/sources_1/new/top_k_sort_bubble.sv)  
-- ✅ Top-k Sort [(`top_k_sort.sv`)](top_k_sort/top_k_sort.srcs/sources_1/new/top_k_sort.sv)
+- 🔁 [Bubble Sort](bubble_sort/bubble_sort.srcs/sources_1/new/bubble_sort.sv)  
+- 🔁 [Top-k Bubble Sort](top_k_sort_bubble/top_k_sort_bubble.srcs/sources_1/new/top_k_sort_bubble.sv)  
+- ✅ [Top-k Sort](top_k_sort/top_k_sort.srcs/sources_1/new/top_k_sort.sv)
+
