@@ -6,7 +6,7 @@
 
 <div align="center">
 
-| Algoritmo            | LUTs    | Registros |
+| Algoritmo            | LUTs    | Registros(FF) |
 |----------------------|---------|-----------|
 | Bubble_Sort          | 38,047  | 1,806     |
 | Top_k_Bubble_Sort    |   391   |   90      |
