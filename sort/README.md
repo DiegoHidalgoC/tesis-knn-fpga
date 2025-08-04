@@ -1,5 +1,17 @@
 ### Comparación de algoritmos de ordenamiento
 
+<h3>Comparación de algoritmos de ordenamiento</h3>
+<p align="center">
+  <img src="sort.png" width="500"/>
+</p>
+
+
+
+
+
+
+
+
 | Algoritmo         | LUTs   | Registros |
 |-------------------|--------|-----------|
 | Bubble Sort       | 38,047 | 1,806     |
