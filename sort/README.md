@@ -22,5 +22,5 @@ Además de reducir drásticamente el uso de recursos lógicos (LUTs y registros)
 ### 🔗 Acceso directo a los bloques RTL
 
 - 🔁 [Bubble Sort (`bubble_sort.sv`)](bubble_sort/bubble_sort.srcs/sources_1/new/bubble_sort.sv)  
-- 🔁 [Top-k Bubble Sort (`top_k_sort_bubble.sv`)](bloques/top_k_sort_bubble.sv)  
+- 🔁 [Top-k Bubble Sort (`top_k_sort_bubble.sv`)](top_k_sort_bubble/top_k_sort_bubble.srcs/sources_1/newtop_k_sort_bubble.sv)  
 - ✅ [Top-k Sort (`top_k_sort.sv`)](bloques/top_k_sort.sv)
