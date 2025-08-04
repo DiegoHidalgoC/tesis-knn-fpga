@@ -6,15 +6,16 @@
 
 <div align="center">
 
-| Algoritmo            | LUTs    | Registros(FFs) |
-|----------------------|---------|-----------|
-| Bubble_Sort          | 38,047  | 1,806     |
-| Top_k_Bubble_Sort    |   391   |   90      |
-| **Top_k_Sort**       | **129** | **90**    |
+| Algoritmo            | LUTs    | Registros (FFs) |
+|----------------------|---------|-----------------|
+| Bubble_Sort          | 38,047  | 1,806           |
+| Top_k_Bubble_Sort    |   391   |   90            |
+| **Top_k_Sort**       | **129** | **90**          |
 
 </div>    
 
-Se evaluaron tres alternativas para ordenar las distancias obtenidas en el algoritmo k-NN:  
+Se evaluaron tres alternativas para ordenar las distancias obtenidas en el algoritmo k-NN, utilizando una carga de **50 datos de entrenamiento** para todas las implementaciones:
+
 🔁 **Bubble_Sort**, que requiere reorganizar la totalidad del arreglo;  
 🔁 **Top_k_Bubble_Sort**, una variante más acotada que aplica Bubble Sort solo sobre los \(k\) primeros elementos; y  
 ✅ **Top_k_Sort**, un enfoque incremental derivado de `Insertion Sort`, que conserva dinámicamente los \(k\) valores más pequeños a medida que llegan nuevos datos.
