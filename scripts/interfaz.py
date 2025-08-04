@@ -16,7 +16,7 @@ import matplotlib.colors as mcolors
 import os 
 import queue
 
-# —–– Fija el directorio de trabajo —––
+
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
 
@@ -42,7 +42,7 @@ try:
 except Exception:
     ser = None
 
-# === Agrega esto justo aquí debajo ===
+
 import queue
 uart_queue = queue.Queue()
 
@@ -55,7 +55,7 @@ def receptor_uart():
         except:
             pass
 
-# Lanza el hilo de recepción UART en paralelo
+
 if ser:
     threading.Thread(target=receptor_uart, daemon=True).start()
 
@@ -555,17 +555,16 @@ def limpiar_eventos():
     evento_manual = None
     eventos_marcados = []
 
-    # Eliminar textos (índices numerados)
+    
     for text in ax.texts:
         text.remove()
 
-    # Eliminar marcadores personalizados (todos excepto el dataset y línea gris)
+    
     for coll in ax.collections[:]:
         if coll.get_label() not in ["Descarga Parcial", "Ruido", "PRL + PRH = 100%"]:
             coll.remove()
 
-    # Eliminar leyenda completa (si existe)
-    # Si existe una leyenda, la actualizamos manualmente
+    
     handles, labels = ax.get_legend_handles_labels()
     base_labels = ["Descarga Parcial", "Ruido", "PRL + PRH = 100%"]
     base_handles = [h for h, l in zip(handles, labels) if l in base_labels]
@@ -613,11 +612,11 @@ def agregar_evento():
     # Guarda el evento
     eventos_marcados.append({'prl': prl, 'prh': prh})
 
-    # Dibuja punto rojo pequeño (más visible)
+    # Dibuja punto rojo pequeño 
     ax.scatter(prl, prh, color='red', s=10, marker='o')
 
 
-    # Dibuja número al lado, más grande
+    # Dibuja número al lado
     ax.text(prl + 0.7, prh + 0.7, str(len(eventos_marcados)),
             fontsize=12, weight='bold', color='black')
 
@@ -712,7 +711,7 @@ status_label.grid(row=6, column=0, columnspan=3, sticky="w", pady=(5, 0))
 frame_descripcion = LabelFrame(frame_dual, text="Descripción", padding=10)
 frame_descripcion.grid(row=1, column=0, sticky="nsew", pady=(10, 0))
 
-# ← Agrega aquí las líneas de tamaño fijo
+
 frame_descripcion.configure(width=435, height=160)
 frame_descripcion.grid_propagate(False)
 
