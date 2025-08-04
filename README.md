@@ -11,4 +11,5 @@ Todo el flujo de diseño fue desarrollado utilizando [**Vivado Design Suite 2025
 - 🧪 Scripts de validación y GUI en Python: [`scripts/`](scripts/)
 - 📊 Datos de entrenamiento y prueba: [`data/`](data/)
 - 🔀 Prueba sort: [`sort/`](sort/)
+  
 **Autor:** Diego Hernán Hidalgo Contreras
