@@ -6,7 +6,6 @@ Todo el flujo de diseño fue desarrollado utilizando [**Vivado Design Suite 2025
 
 ### Estructura del repositorio:
 
-- 📄 Documentación: [`doc/`](doc/)
 - 🔧 Códigos RTL en SystemVerilog: [`src/`](src/)
 - 🧪 Scripts de validación y GUI en Python: [`scripts/`](scripts/)
 - 📊 Datos de entrenamiento y prueba: [`data/`](data/)
